@@ -55,22 +55,6 @@ test("parseResults", function(t) {
   })
 })
 
-test("notify", function(t) {
-  t.plan(2)
-  taper.execute(passingTapeTest, function(output) {
-    taper.parseResults(output, 3, function(status, message) {
-      var returned = taper.notify(status, message)
-      t.equal(returned[0], "Pass")
-    })
-  })
-  taper.execute(failingTapeTest, function(output) {
-    taper.parseResults(output, 3, function(status, message) {
-      var returned = taper.notify(status, message)
-      t.equal(returned[0], "Fail")
-    })
-  })
-})
-
 test("watch", function(t) {
   t.plan(1)
   taper.watch("./test", {}, function(path) {
@@ -131,5 +115,23 @@ test("Glob-to-chokidar", function(t) {
       })
   })
 })
+
+// no gui on travis
+//
+// test("notify", function(t) {
+//   t.plan(2)
+//   taper.execute(passingTapeTest, function(output) {
+//     taper.parseResults(output, 3, function(status, message) {
+//       var returned = taper.notify(status, message)
+//       t.equal(returned[0], "Pass")
+//     })
+//   })
+//   taper.execute(failingTapeTest, function(output) {
+//     taper.parseResults(output, 3, function(status, message) {
+//       var returned = taper.notify(status, message)
+//       t.equal(returned[0], "Fail")
+//     })
+//   })
+// })
 
 */
