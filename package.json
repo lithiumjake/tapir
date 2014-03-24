@@ -1,0 +1,28 @@
+{
+  "name": "tapir",
+  "version": "0.1.0",
+  "description": "tape test runner for node",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lithiumjake/tapir.git"
+  },
+  "keywords": [
+    "tape tap test test-runner tapir"
+  ],
+  "author": "jeremy suntheimer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lithiummjake/tapir/issues"
+  },
+  "dependencies": {
+    "node-notifier": "~2.0.3",
+    "chokidar": "~0.8.1"
+  },
+  "devDependencies": {
+    "tape": "~2.10.2"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  }
+}
