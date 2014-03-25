@@ -24,6 +24,14 @@ Tapir uses node-notifier to provide desktop notification.  Taper will indicate p
 I guess it works out of the box with OSX using Growl.  Linux requires notify-send to be installed.
 Windows requires Growl for Windows (whatever that is).
 
+#### alternative usage
+
+Alternatively, you can pipe to Tapir and it will notify you of test results.
+
+Example:
+
+`tape test/*.test.js | tapir`
+
 
 ## license
 

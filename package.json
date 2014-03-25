@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "tape test runner for node",
   "main": "src/index.js",
-  "bin": {"tapir": "src/cli.js"},
+  "bin": {
+    "tapir": "src/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lithiumjake/tapir.git"
@@ -18,7 +20,8 @@
   },
   "dependencies": {
     "node-notifier": "~2.0.3",
-    "chokidar": "~0.8.1"
+    "chokidar": "~0.8.1",
+    "tap-parser": "^0.4.3"
   },
   "devDependencies": {
     "tape": "~2.10.2"
